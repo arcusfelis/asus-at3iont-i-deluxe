@@ -1,0 +1,21 @@
+ASUS_AT3IONT_I_DELUXE kernel modules source
+===========================================
+
+This package can be used to build the kernel modules for the remote and the
+bluetooth devices on ASUS AT3IONT-I DELUXE motherboard.
+Available drivers are:
+Remote driver:		hid-philips-asus
+Bluetooth driver:	ath3k
+
+The bluetooth driver will be included in standard kernel release in the future,
+so then you can remove it from the build list.
+
+The package uses dkms and standard dkms mechanisms to do the automatic building.
+
+Configuration
+=============
+1. Edit modules.conf to select which drivers to build.
+
+2. Edit mappings.h in hid-philips-asus dir to configure the remote keymap.
+
+
